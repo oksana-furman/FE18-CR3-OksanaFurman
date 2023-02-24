@@ -1,0 +1,36 @@
+.footer {
+    background-color: rgb(94, 80, 63);
+    width: 100%;
+    margin-bottom: -15px;
+    .footer-box {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .footer-link {
+            text-decoration: none;
+            color: rgb(234, 224, 213);
+        }
+    }
+    .input-group-text {
+        background-color: rgb(94, 80, 63);
+        color: rgb(234, 224, 213);
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        p {
+            padding-right: 20px;
+        }
+        .btn {
+            background-color: rgb(94, 80, 63);
+            color: rgb(234, 224, 213);
+            margin-left: 20px;
+        }
+    }
+    .footer-p {
+        text-align: center;
+        color: rgb(234, 224, 213);
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+}

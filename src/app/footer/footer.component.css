@@ -1,0 +1,46 @@
+.footer {
+  background-color: #5e503f;
+  width: 100%;
+  margin-bottom: -15px;
+}
+
+.footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer .footer-box .footer-link {
+  text-decoration: none;
+  color: #eae0d5;
+}
+
+.footer .input-group-text {
+  background-color: #5e503f;
+  color: #eae0d5;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer .input-group-text p {
+  padding-right: 20px;
+}
+
+.footer .input-group-text .btn {
+  background-color: #5e503f;
+  color: #eae0d5;
+  margin-left: 20px;
+}
+
+.footer .footer-p {
+  text-align: center;
+  color: #eae0d5;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=footer.component.css.map */

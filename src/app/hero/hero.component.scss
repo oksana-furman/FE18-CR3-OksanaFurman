@@ -1,0 +1,20 @@
+.hero {
+    background-image: url(../../assets/img/pizza6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #box {
+        padding: 10px;
+        font-family: 'Playball', cursive;
+        font-size: x-large; //not working
+        text-align: center;
+        color: rgb(10, 9, 8);
+        background-color: rgba(198, 172, 143, 0.6);
+    }
+}
