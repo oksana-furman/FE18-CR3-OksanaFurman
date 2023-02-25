@@ -11,18 +11,6 @@ export class CartService {
   
   constructor() { }
 
-  // priceFun(val:IProducts){
-  //       // for(let val of this.products){
-  //       if(typeof(val.price) == "undefined"){
-  //         return "This product is not available";
-  //       } else{
-  //         return val.price;
-  //       }
-  //     // }
-  //   }
-
-
-
   addToCart(product:IProducts){  
      if(this.items.find(function(val) {return val.name == product.name})) {
       product.qtty++;
@@ -38,6 +26,16 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+
+  total(){ 
+    let total: number = 0;
+    for(let val of this.items){
+      total = total + (val.price * val.qtty);
+    }
+    return total;
+  }
+
+  //functions for plus, minus, delete buttons in the cart
   plusQtty(i:number){
     this.items[i].qtty++;
   }
@@ -52,12 +50,6 @@ export class CartService {
     this.items[i].qtty = 1;
     this.items.splice(i, 1);
   }
-  total(){
-    
-    let total: number = 0;
-    for(let val of this.items){
-      total = total + (val.price * val.qtty);
-    }
-    return total;
-  }
+
+
 }

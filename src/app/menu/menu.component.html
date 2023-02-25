@@ -11,14 +11,15 @@
                     <p class="card-text">{{ val.price | currency:'EUR' }}</p>
                     <hr>
                     <div class="text-center">
+
+                        <!-- for products that are available -->
                         <ng-template [ngIf]="val.availability==true" [ngIfElse]="none">
                             <a class="btn btn-primary btnDetail" routerLink="/menu/{{ id }}">See details</a>
                             <a class="btn btn-danger btnBuy" (click)="addToCart(val)">Buy</a>
                         </ng-template>
+
                         <ng-template #none>
-
                             <p id="notAvail">This product is not available</p>
-
                         </ng-template>
 
                     </div>
