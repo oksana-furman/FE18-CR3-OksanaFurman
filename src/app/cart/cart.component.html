@@ -1,1 +1,33 @@
-<p>cart works!</p>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="cart-item" *ngFor="let item of items; index as i">
+            <td><img src="{{ item.photo }}" height="60px" alt="{{ item.name }}"></td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price | currency : "EUR" }}</td>
+            <td><i class="plus fs-5 bi bi-plus-circle-fill" (click)="plusQtty(i)"></i> {{ item.qtty }} <i class="minus fs-5 bi bi-dash-circle-fill" (click)="minusQtty(i)"></i> <i class="delete fs-4 bi bi-trash3-fill text-danger" (click)="deleteQtty(i)"></i></td>
+        </tr>
+        <tr>
+            <ng-template [ngIf]="total>40" [ngIfElse]="none">
+                <th scope="row" colspan="4">Total(including VAT): {{ total | currency : "EUR" }}. Your discount is 15%. Your new total is {{ total * 0.85 | currency : "EUR"}}</th>
+            </ng-template>
+
+            <ng-template #none>
+                <th scope="row" colspan="4">Total(including VAT): {{ total | currency : "EUR" }}</th>
+            </ng-template>
+        </tr>
+        <tr>
+            <!-- order form goes here: 1. please fill up the info for the delivery. 2.label,input(name,address). 3.btn(Purchase) -->
+        </tr>
+    </tbody>
+</table>
+<div *ngIf="items.length==0" id="empty">
+    <h2 class="text-body-tertiary text-center">The cart is empty</h2>
+</div>

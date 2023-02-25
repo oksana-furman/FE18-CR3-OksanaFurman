@@ -12,6 +12,10 @@
   height: 300px;
 }
 
+.headline {
+  font-family: 'Playball', cursive;
+}
+
 .d-flex {
   padding: 20px;
 }

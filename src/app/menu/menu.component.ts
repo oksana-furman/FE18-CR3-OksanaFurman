@@ -9,7 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-products: Array<IProducts> = products;
+  products: Array<IProducts> = products;
 items: IProducts[] = [];
 
   constructor(private cartService: CartService) { }
@@ -18,6 +18,7 @@ items: IProducts[] = [];
     window.alert('Your order has been added to the cart!');
     this.cartService.addToCart(val);
   }
+  
 
   ngOnInit(): void {
   }

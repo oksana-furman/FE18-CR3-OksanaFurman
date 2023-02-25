@@ -1,12 +1,11 @@
 export interface IProducts {
     name: string,
-    category: string,
+    availability: boolean,
     ingridients: string,
-    vegan: boolean,
-    spicy?: boolean,
-    price?: number,
+    veganStatus: string,
+    spicyStatus: string,
+    price: number,
     photo: string,
     description: string,
-    qtty: number,
-    num: string
+    qtty: number
 }

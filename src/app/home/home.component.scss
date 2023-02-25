@@ -1,8 +1,4 @@
 .box {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-around;
-    // align-items: center;
     .item {
         text-align: center;
         padding: 10px;
@@ -14,6 +10,10 @@
             height: 300px;
         }
     }
+}
+
+.headline {
+    font-family: 'Playball', cursive;
 }
 
 .d-flex {

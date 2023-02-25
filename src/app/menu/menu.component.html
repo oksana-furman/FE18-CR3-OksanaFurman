@@ -3,14 +3,26 @@
     <!-- card with products -->
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
         <div *ngFor="let val of products; index as id">
-            <div class="card mx-auto" style="width: 18rem; height: 25rem;">
+            <div class="card mx-auto" style="width: 18rem; height: 27rem;">
                 <img src="{{ val.photo }}" class="card-img-top" alt="{{ val.name }}">
                 <div class="card-body">
-                    <h5 class="card-title">{{ val.name }}</h5>
-                    <!-- price function goes here -->
-                    <p class="card-text"></p>
-                    <a class="btn btn-primary btnDetail" routerLink="/menu/{{ id }}">See details</a>
-                    <a class="btn btn-danger btnBuy" (click)="addToCart(val)">Buy</a>
+                    <h5 class="card-title">{{ val.name }} {{ val.veganStatus }}</h5>
+                    <hr>
+                    <p class="card-text">{{ val.price | currency:'EUR' }}</p>
+                    <hr>
+                    <div class="text-center">
+                        <ng-template [ngIf]="val.availability==true" [ngIfElse]="none">
+                            <a class="btn btn-primary btnDetail" routerLink="/menu/{{ id }}">See details</a>
+                            <a class="btn btn-danger btnBuy" (click)="addToCart(val)">Buy</a>
+                        </ng-template>
+                        <ng-template #none>
+
+                            <p id="notAvail">This product is not available</p>
+
+                        </ng-template>
+
+                    </div>
+
                 </div>
             </div>
         </div>

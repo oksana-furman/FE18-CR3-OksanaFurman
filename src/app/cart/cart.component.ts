@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../products';
 import { IProducts } from '../iproducts';
+import { CartService } from '../cart.service';
 
 
 @Component({
@@ -9,11 +10,27 @@ import { IProducts } from '../iproducts';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  products: Array<IProducts> = products;
+  items: IProducts[] = [];
+  total : number = 0;
+  plusQtty(i: number){
+    this.cartService.plusQtty(i);
+    this.total = this.cartService.total()
+  }
+  minusQtty(i: number){
+    this.cartService.minusQtty(i);
+    this.total = this.cartService.total();
+  }
+  deleteQtty(i:number){
+    this.cartService.deleteQtty(i);
+    this.total = this.cartService.total();
+  }
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
+    this.items = this.cartService.getItems();
+
+    this.total = this.cartService.total()
   }
 
 }
