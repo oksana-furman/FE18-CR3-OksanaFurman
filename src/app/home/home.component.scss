@@ -1,0 +1,24 @@
+.box {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: center;
+    .item {
+        text-align: center;
+        padding: 10px;
+        .headline {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 2px;
+            height: 300px;
+        }
+    }
+}
+
+.d-flex {
+    padding: 20px;
+    img {
+        width: 200px;
+    }
+}

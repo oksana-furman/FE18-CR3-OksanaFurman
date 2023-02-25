@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { CartComponent } from './cart/cart.component';
 import { HeroComponent } from './hero/hero.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeroComponent } from './hero/hero.component';
     AboutComponent,
     MenuComponent,
     CartComponent,
-    HeroComponent
+    HeroComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

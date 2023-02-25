@@ -6,5 +6,7 @@ export interface IProducts {
     spicy?: boolean,
     price?: number,
     photo: string,
-    description: string
+    description: string,
+    qtty: number,
+    num: string
 }

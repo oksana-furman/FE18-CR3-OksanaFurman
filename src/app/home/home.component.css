@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=home.component.css.map */
+.box .item {
+  text-align: center;
+  padding: 10px;
+}
+
+.box .item .headline {
+  text-decoration: underline;
+}
+
+.box .item img {
+  border-radius: 2px;
+  height: 300px;
+}
+
+.d-flex {
+  padding: 20px;
+}
+
+.d-flex img {
+  width: 200px;
+}
+/*# sourceMappingURL=home.component.css.map */

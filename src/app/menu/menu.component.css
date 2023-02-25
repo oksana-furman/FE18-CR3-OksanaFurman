@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=menu.component.css.map */
+.card {
+  margin: 10px;
+  text-align: center;
+}
+
+.card img {
+  height: 60%;
+}
+
+.card .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=menu.component.css.map */

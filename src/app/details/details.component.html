@@ -1,0 +1,24 @@
+<div class="container">
+
+
+    <!-- <div *ngIf="product"> -->
+
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="{{ product.photo }}" alt="{{ product.name }}">
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <!-- vegan function goes here -->
+            <h2>{{ product.name }}</h2>
+            <!-- spicy function goes here -->
+            <p>Ingridients: {{ product.ingridients }}</p>
+            <!-- price function goes here -->
+            <!-- <p *ngIf="product.price !== undefined">Price: {{ product.price }}</p> -->
+            <p>{{ product.description }}</p>
+            <button class="btn btn-danger btnBuy" (click)="addToCart(product)">Buy</button>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+</div>
