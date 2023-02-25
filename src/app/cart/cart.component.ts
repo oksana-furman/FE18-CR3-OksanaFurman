@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../products';
 import { IProducts } from '../iproducts';
 import { CartService } from '../cart.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -12,6 +12,7 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
   items: IProducts[] = [];
   total : number = 0;
+
   plusQtty(i: number){
     this.cartService.plusQtty(i);
     this.total = this.cartService.total()

@@ -59,17 +59,5 @@ export class CartService {
       total = total + (val.price * val.qtty);
     }
     return total;
-
-    // let total: number = 0;
-    // let result: string = "";
-    // for(let val of this.items){
-    //   total = total + (val.price * val.qtty);
-    //   if(total<40){
-    //     return total;
-    //   } else {
-    //     result = `${total}Your discount is 15%. Your new total is ${total * 0.85}`;
-    //     return result ;
-    //   }
-    // }
   }
 }
