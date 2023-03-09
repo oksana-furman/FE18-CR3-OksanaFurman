@@ -1,13 +1,13 @@
 .box {
     .item {
         text-align: center;
-        padding: 10px;
+        padding: 0.7rem;
         .headline {
             text-decoration: underline;
         }
         img {
             border-radius: 2px;
-            height: 300px;
+            height: 18.75rem;
         }
     }
 }
@@ -17,8 +17,8 @@
 }
 
 .d-flex {
-    padding: 20px;
+    padding: 1.25rem;
     img {
-        width: 200px;
+        width: 12.5rem;
     }
 }

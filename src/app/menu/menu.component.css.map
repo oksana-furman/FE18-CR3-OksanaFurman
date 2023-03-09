@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;CAWrB;;AAbD,AAGI,KAHC,CAGD,GAAG,CAAC;EACA,MAAM,EAAE,GAAG;CACd;;AALL,AAMI,KANC,CAMD,IAAI,CAAC;EACD,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,GAAG;CACpB;;AATL,AAUI,KAVC,CAUD,SAAS,CAAC;EACN,KAAK,EAAE,GAAG;CACb",
-    "sources": [
-        "menu.component.scss"
-    ],
-    "names": [],
-    "file": "menu.component.css"
-}
+{"version":3,"sources":["menu.component.scss","menu.component.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,kBAAA;ACCJ;ADAI;EACI,WAAA;ACER;ADAI;EACI,gBAAA;EACA,iBAAA;ACER;ADAI;EACI,UAAA;ACER","file":"menu.component.css"}

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,KAAK;CAKhB;;AAND,AAEI,MAFE,CAEF,EAAE,CAAC;EACC,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "cart.component.scss"
-    ],
-    "names": [],
-    "file": "cart.component.css"
-}
+{"version":3,"sources":["cart.component.scss","cart.component.css"],"names":[],"mappings":"AAAA;EACI,aAAA;ACCJ;ADAI;EACI,YAAA;EACA,aAAA;ACER","file":"cart.component.css"}

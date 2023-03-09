@@ -2,27 +2,23 @@ h1 {
   text-align: center;
   margin: 30px;
   padding: 30px;
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
 }
 
 .d-flex {
   margin: 10px;
   padding: 10px;
 }
-
 .d-flex .flex-grow-1 {
   text-align: center;
 }
-
 .d-flex .flex-grow-1 h4 {
   margin: 10px;
   padding: 10px;
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
 }
-
 .d-flex .flex-shrink-0 img {
   height: 600px;
   margin: 20px;
   border-radius: 3px;
-}
-/*# sourceMappingURL=about.component.css.map */
+}/*# sourceMappingURL=about.component.css.map */

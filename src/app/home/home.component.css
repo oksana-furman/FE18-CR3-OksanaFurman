@@ -2,25 +2,21 @@
   text-align: center;
   padding: 10px;
 }
-
 .box .item .headline {
   text-decoration: underline;
 }
-
 .box .item img {
   border-radius: 2px;
   height: 300px;
 }
 
 .headline {
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
 }
 
 .d-flex {
   padding: 20px;
 }
-
 .d-flex img {
   width: 200px;
-}
-/*# sourceMappingURL=home.component.css.map */
+}/*# sourceMappingURL=home.component.css.map */

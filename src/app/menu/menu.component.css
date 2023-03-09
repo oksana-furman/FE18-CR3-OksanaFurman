@@ -2,17 +2,13 @@
   margin: 10px;
   text-align: center;
 }
-
 .card img {
   height: 60%;
 }
-
 .card .btn {
   margin-left: 5px;
   margin-right: 5px;
 }
-
 .card #notAvail {
   color: red;
-}
-/*# sourceMappingURL=menu.component.css.map */
+}/*# sourceMappingURL=menu.component.css.map */

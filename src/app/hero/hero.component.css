@@ -5,27 +5,16 @@
   background-position: center;
   height: 500px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .hero #box {
   padding: 10px;
-  font-family: 'Playball', cursive;
+  font-family: "Playball", cursive;
   font-size: x-large;
   text-align: center;
-  color: #0a0908;
+  color: rgb(10, 9, 8);
   background-color: rgba(198, 172, 143, 0.6);
-}
-/*# sourceMappingURL=hero.component.css.map */
+}/*# sourceMappingURL=hero.component.css.map */

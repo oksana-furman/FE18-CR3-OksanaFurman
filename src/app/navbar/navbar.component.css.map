@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,OAAe;CAIpC;;AALD,AAEI,OAFG,CAEH,SAAS,CAAC;EACN,KAAK,EAAE,OAAkB;CAC5B",
-    "sources": [
-        "navbar.component.scss"
-    ],
-    "names": [],
-    "file": "navbar.component.css"
-}
+{"version":3,"sources":["navbar.component.scss","navbar.component.css"],"names":[],"mappings":"AAAA;EACI,iCAAA;ACCJ;ADAI;EACI,yBAAA;ACER","file":"navbar.component.css"}

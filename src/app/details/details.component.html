@@ -5,12 +5,7 @@
             <img src="{{ product.photo }}" alt="{{ product.name }}">
         </div>
         <div class="flex-grow-1 ms-3">
-            <!-- vegan function goes here -->
-            <!-- this funtion call does not work, please advise if i can even write into the h2 like that -->
-            <!-- <h2>{{ product.name }}{{ veganFun(product) }}</h2> -->
             <h2>{{ product.name }} {{ product.veganStatus }}</h2>
-
-            <!-- spicy function goes here -->
             <p>Ingridients: {{ product.ingridients }}</p>
             <p>{{ product.spicyStatus }}</p>
 

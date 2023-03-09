@@ -3,11 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #eae0d5;
-}
-/*# sourceMappingURL=styles.css.map */
+  background-color: rgb(234, 224, 213);
+}/*# sourceMappingURL=styles.css.map */
